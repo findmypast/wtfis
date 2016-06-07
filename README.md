@@ -1,5 +1,7 @@
 # Wtfis
 
+API to fetch a short summary of github readmes
+
 To start your Phoenix app:
 
   * Install dependencies with `mix deps.get`
