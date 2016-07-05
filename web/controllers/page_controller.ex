@@ -9,6 +9,10 @@ defmodule Wtfis.QueryController do
     |> send_response(conn)
   end
 
+  defp send_response(nil, conn) do
+    json conn, %{ text: "Not found", response_type: "in_channel" }
+  end
+
   defp send_response(text, conn) do
     json conn, %{ text: text, response_type: "in_channel" }
   end
