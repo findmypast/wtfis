@@ -34,6 +34,6 @@ defmodule Wtfis.Mixfile do
      {:gettext, "~> 0.9"},
      {:cowboy, "~> 1.0"},
      {:poison, "~> 2.0"},
-     {:httpotion, "~> 2.2.0"}]
+     {:httpotion, "~> 3.0.0"}]
   end
 end

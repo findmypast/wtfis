@@ -14,8 +14,7 @@ defmodule Wtfis.QueryController do
   end
 
   defp query_github(name) do
-    HTTPotion.get("api.github.com/repos/findmypast/#{name}")
-    |> Map.get(:body)
+    HTTPotion.get("https://api.github.com/repos/findmypast/#{name}", headers: ["User-Agent": "FindMyPast-wtfis"]).body
   end
 
 end
